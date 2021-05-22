@@ -10,6 +10,7 @@ let started = false;
 let level = 0;
 
 // detecting when a keyboard key has been pressed
+// nextSequence() is called only on the first keypress
 $(document).keypress(function() {
     if (!started) {
         $("#level-title").text("Level " + level);
